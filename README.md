@@ -50,5 +50,6 @@ Make sure you have [Node.js](https://nodejs.org/) and Newman installed:
 
 ## Author $ Tester
 
-**[Arifin Mahmud](https://www.linkedin.com/in/arifin-mahmud/)**  
-Aspiring QA Engineer | Passionate about quality, bugs, and clean test cases.
+**Md. Foysal Mahmud**  
+Software Quality Assurance Engineer
+
