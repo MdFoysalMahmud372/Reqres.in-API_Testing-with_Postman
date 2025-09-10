@@ -1,0 +1,485 @@
+{
+	"id": "f4df622a-4bc8-4ee2-bf41-240a62094cc3",
+	"name": "Reqres API",
+	"timestamp": "2025-02-13T07:55:29.568Z",
+	"collection_id": "37010151-db86a84f-11dc-4f56-9666-5ac44a17c8d4",
+	"folder_id": 0,
+	"environment_id": "37010151-c44b3a01-3abe-4c83-a8be-7d18333f55fb",
+	"totalPass": 16,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-02-13T07:55:23.235Z",
+	"totalFail": 7,
+	"results": [
+		{
+			"id": "d11cc832-f23c-495f-8358-e8cf7642092b",
+			"name": "Login Copy",
+			"url": "https://reqres.in/api/login",
+			"time": 445,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				445
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "dd8cedab-09be-4408-9103-225c8866a9c2",
+			"name": "Login with Invalid method Copy",
+			"url": "https://reqres.in/api/login",
+			"time": 68,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 404 Not Found": false
+			},
+			"testPassFailCounts": {
+				"Status code is 404 Not Found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				68
+			],
+			"allTests": [
+				{
+					"Status code is 404 Not Found": false
+				}
+			]
+		},
+		{
+			"id": "2e2e5e1e-ad76-4cfe-a0cd-b56f6602f192",
+			"name": "Login with Invalid URL Copy",
+			"url": "https://reqres.in/api/log",
+			"time": 439,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 404": false
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				439
+			],
+			"allTests": [
+				{
+					"Status code is 404": false
+				}
+			]
+		},
+		{
+			"id": "3d13e498-30c6-4698-a13c-971766532341",
+			"name": "Login with Invalid Credentials Copy",
+			"url": "https://reqres.in/api/login",
+			"time": 436,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400 Bad Request": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400 Bad Request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				436
+			],
+			"allTests": [
+				{
+					"Status code is 400 Bad Request": true
+				}
+			]
+		},
+		{
+			"id": "a1bc2791-66d4-4ecf-9829-b9651a52ad03",
+			"name": "Register",
+			"url": "https://reqres.in/api/register",
+			"time": 438,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": false,
+				"Response has the required fields - id and token": true,
+				"Id is a non-negative integer": true,
+				"Token is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields - id and token": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				438
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": false,
+					"Response has the required fields - id and token": true,
+					"Id is a non-negative integer": true,
+					"Token is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "0e29e0f2-578c-413f-b9ed-f2d9f96dbbbc",
+			"name": "Registering with Invalid Method",
+			"url": "https://reqres.in/api/register",
+			"time": 70,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 405 Method not Allowed": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 405 Method not Allowed": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				70
+			],
+			"allTests": [
+				{
+					"Response status code is 405 Method not Allowed": false
+				}
+			]
+		},
+		{
+			"id": "796c5ebf-4e8a-4e12-ba25-9d69658d25ba",
+			"name": "Registering with Invalid URL",
+			"url": "https://reqres.in/api/reg",
+			"time": 449,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 404": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				449
+			],
+			"allTests": [
+				{
+					"Response status code is 404": false
+				}
+			]
+		},
+		{
+			"id": "c52a60bd-dee4-4add-948d-dd083f3b2058",
+			"name": "Registering with Invalid Credentials",
+			"url": "https://reqres.in/api/reg",
+			"time": 445,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400 Bad Request": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400 Bad Request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				445
+			],
+			"allTests": [
+				{
+					"Status code is 400 Bad Request": true
+				}
+			]
+		},
+		{
+			"id": "79e10be9-b207-4298-b026-85a1c459f7e1",
+			"name": "User List",
+			"url": "https://reqres.in/api/users?page=1",
+			"time": 441,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": false,
+				"Validate the schema for the response data object": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Validate the schema for the response data object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				441
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": false,
+					"Validate the schema for the response data object": true
+				}
+			]
+		},
+		{
+			"id": "6c50a710-e623-410f-9b56-f93cadec9267",
+			"name": "Create",
+			"url": "https://reqres.in/api/users",
+			"time": 444,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				444
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "7434f303-fafe-49bc-9cb2-5fc8b08fcba3",
+			"name": "Update",
+			"url": "https://reqres.in/api/users/455",
+			"time": 454,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response status code is 200": true,
+				"Response time is within an acceptable range": false,
+				"Response has the required fields - name, job, and updatedAt": true,
+				"Name and job should be non-empty strings": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is within an acceptable range": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields - name, job, and updatedAt": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name and job should be non-empty strings": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				454
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response status code is 200": true,
+					"Response time is within an acceptable range": false,
+					"Response has the required fields - name, job, and updatedAt": true,
+					"Name and job should be non-empty strings": true
+				}
+			]
+		},
+		{
+			"id": "03aef286-ad68-403c-b25c-d89d06588725",
+			"name": "Patch",
+			"url": "https://reqres.in/api/users/455",
+			"time": 440,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				440
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f2f03378-52c8-4967-aefd-49ad604c1fc5",
+			"name": "Delete",
+			"url": "https://reqres.in/api/users/455",
+			"time": 438,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				438
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5007,
+	"collection": {
+		"requests": [
+			{
+				"id": "d11cc832-f23c-495f-8358-e8cf7642092b",
+				"method": "POST"
+			},
+			{
+				"id": "dd8cedab-09be-4408-9103-225c8866a9c2",
+				"method": "GET"
+			},
+			{
+				"id": "2e2e5e1e-ad76-4cfe-a0cd-b56f6602f192",
+				"method": "POST"
+			},
+			{
+				"id": "3d13e498-30c6-4698-a13c-971766532341",
+				"method": "POST"
+			},
+			{
+				"id": "a1bc2791-66d4-4ecf-9829-b9651a52ad03",
+				"method": "POST"
+			},
+			{
+				"id": "0e29e0f2-578c-413f-b9ed-f2d9f96dbbbc",
+				"method": "GET"
+			},
+			{
+				"id": "796c5ebf-4e8a-4e12-ba25-9d69658d25ba",
+				"method": "POST"
+			},
+			{
+				"id": "c52a60bd-dee4-4add-948d-dd083f3b2058",
+				"method": "POST"
+			},
+			{
+				"id": "79e10be9-b207-4298-b026-85a1c459f7e1",
+				"method": "GET"
+			},
+			{
+				"id": "6c50a710-e623-410f-9b56-f93cadec9267",
+				"method": "POST"
+			},
+			{
+				"id": "7434f303-fafe-49bc-9cb2-5fc8b08fcba3",
+				"method": "PUT"
+			},
+			{
+				"id": "03aef286-ad68-403c-b25c-d89d06588725",
+				"method": "PATCH"
+			},
+			{
+				"id": "f2f03378-52c8-4967-aefd-49ad604c1fc5",
+				"method": "DELETE"
+			}
+		]
+	}
+}
